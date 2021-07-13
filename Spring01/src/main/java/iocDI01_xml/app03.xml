@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+<!-- Test1 고적적방법 : 직접 new -->
+	<bean class="iocDI01_xml.SsTVs" id="sstv" lazy-init="true"/>
+	
+	
+<!-- Test2) IOC/DI => 생성자 주입 
+      => 매개변수1개, 2개 모두 Test   
+      => 인자의 종류 (type , 갯수) 에 따라 해당 생성자 호출됨 
+      => index, name(생성자 매개변수명) 속성을 적용하면 더욱 정확하게 매칭가능함 
+-->	
+	
+	<bean class="iocDI01_xml.Speaker" id="speaker" lazy-init="true" />
+	
+	<bean class="iocDI01_xml.LgTVs" id="Lgtv" lazy-init="true">
+		<constructor-arg name="price" value="1234000" />
+		<constructor-arg name="sp" ref="speaker" />
+		<constructor-arg name="color" value="red"/>
+	</bean>
+	
+	
+<!-- Test3) IOC/DI => Setter 주입 
+      => setter 메서드는 <bean> 생성 직후 컨테이너가 자동 호출
+      => 매개변수1개, 2개 모두 Test 
+      => setter 찾는 규칙 (setSpeaker )  
+            name에 지정된 값으로 setter메서드명 setSpeaker, setPrice 를 찾기때문에
+            setter 메서드명과 변수명을 일치시키는것이 좋음 
+-->	
+	
+	<bean class="iocDI01_xml.AiTVs" id="aitv" lazy-init="true">
+		<property name="price" value="22334400"/>
+		<property name="sp" ref="speaker"/>
+	</bean>
+</beans>

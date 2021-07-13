@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.2.xsd">
+
+    <!-- 애노테이션 , Annotation , @ 을 Scan할  패키지 정의  -->
+	<context:component-scan base-package="iocDI02_anno"/>
+	
+	<bean class="iocDI02_anno.SpeakerA" id="spA" lazy-init="true" />
+	<bean class="iocDI02_anno.SpeakerB" id="spB" lazy-init="true" />
+
+
+</beans>

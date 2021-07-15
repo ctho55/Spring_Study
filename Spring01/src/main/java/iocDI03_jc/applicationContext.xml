@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!-- ** JC 에서 xml 병행 사용하기 
+		=> AiTVs 생성은 xml 로 
+ -->
+	<bean class="iocDI03_jc.AiTVs" id="aitv" lazy-init="true" >
+		<property name="price" value="5678000"/>
+		<property name="sp" ref="sp" />
+	</bean>
+	<bean class="iocDI03_jc.Speaker" id="sp" lazy-init="true"/>
+
+</beans>

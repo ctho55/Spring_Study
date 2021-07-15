@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!-- ** JC , @ , xml 병행 사용하기 
+	=> SsTVsi xml 로 생성후 User 클래스에서 getBean 
+ -->
+	<bean class="iocDI03_jc.SsTVsi" id="sstv" lazy-init="true"/>
+
+</beans>

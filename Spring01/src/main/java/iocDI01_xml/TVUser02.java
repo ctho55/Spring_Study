@@ -5,6 +5,19 @@ import org.springframework.context.support.GenericXmlApplicationContext;
 
 //** 스프링이 제공하는 BeanFactory
 //=> 스프링 컨테이너
+
+//** 스프링이 제공하는 BeanFactory
+//=> 스프링 컨테이너 (ppt 11,12 page)
+//=> AbstractApplicationContext 와 GenericXmlApplicationContext 계층도 
+//=> Object -> DefaultResourceLoader (C) -> AbstractApplicationContext (A) 
+// -> GenericApplicationContext (C) -> GenericXmlApplicationContext (C) 
+
+//public abstract class AbstractApplicationContext extends DefaultResourceLoader
+//implements ConfigurableApplicationContext, DisposableBean {....
+
+//public class GenericXmlApplicationContext extends GenericApplicationContext {...
+
+
 //=> 컨테이너는 xml (설정화일), @, JavaCode (JavaConfig) 등의 
 // 전달사항을 통해 요구하는 클래스를 생성, 보관, 제공
 

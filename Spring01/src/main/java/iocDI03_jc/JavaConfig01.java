@@ -30,7 +30,9 @@ import org.springframework.context.annotation.ImportResource;
 @Configuration
 public class JavaConfig01 {
 	@Bean
-	public TV tree() {
+	public TV tree() { 
+	// => 메서드명이 BeanName
+	// => private , final 불가	
 		return new LgTVi();
 	} //tree
 

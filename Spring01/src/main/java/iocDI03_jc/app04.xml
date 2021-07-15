@@ -5,7 +5,9 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.2.xsd">
 
-	<!-- ** JavaConfig 파일을 생성 해주고, 이 파일의  @을 인식가능 하도록 해줌 -->
+	<!-- ** xml 을 통해 JavaConfig 사용하기
+		=> JavaConfig 파일을 생성 (<bean.. 설정) 해주고 , 
+		=> 이 파일의 @을 인식 가능 하도록 해줌 -->
 	<bean class="iocDI03_jc.JavaConfig04" />
 	<context:annotation-config />
 	

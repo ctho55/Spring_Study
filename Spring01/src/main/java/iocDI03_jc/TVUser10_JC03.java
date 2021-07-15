@@ -64,7 +64,7 @@ class AiTVsi implements TV {
 	//             @A..  JC 에서
 	//  그러므로 @A..를 위해서는 반드시 이미 생성되어있어야함 
 	@Autowired 
-	@Qualifier("spB")
+	@Qualifier("spA") // User10 은 spA , User11 은 spB 를 Test 함.
 	private Speakeri sp;
 	private int price;
 	

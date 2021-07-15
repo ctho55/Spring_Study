@@ -7,5 +7,7 @@
 	=> SsTVsi xml 로 생성후 User 클래스에서 getBean 
  -->
 	<bean class="iocDI03_jc.SsTVsi" id="sstv" lazy-init="true"/>
-
+	
+	<!-- xml 에서 SpeakerA 생성 후 @Autowired Test  -->
+	<bean class="iocDI03_jc.SpeakerA" id="spA" lazy-init="true"/>
 </beans>

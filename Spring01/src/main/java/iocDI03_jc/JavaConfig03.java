@@ -43,14 +43,15 @@ public class JavaConfig03 {
 	
 	// => @Autowired 를 위해 @Qualifier("spB") 에 전달해야 하므로  
 	//    @Bean 이 필요함. (적용 전,후 오류메시지를 확인해본다)
-	@Bean
-	public Speakeri spB() {
-		return new SpeakerB();
-	}
+//	@Bean
+//	public Speakeri spB() {
+//		return new SpeakerB();
+//	}
+// => xml 에서 SpeakerA 생성 후 @Autowired Test 위해 주석
 	@Bean
 	public TV aitv() {
 		//return new AiTVsi(spB()); // 생성자주입
-		return new AiTVsi(); // @Autowired Test 
+		return new AiTVsi(); // spA 로 @Autowired Test 
 	}
 	
 } //class

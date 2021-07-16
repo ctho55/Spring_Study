@@ -1,4 +1,4 @@
-package memberDI;
+package util;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -14,8 +14,7 @@ public class DBConnection {
 			// 1) MySql JDBC 드라이버 로딩
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			// 2) Connection 객체 생성
-			// MySql 8.0 이후 부터는 allowPublicKeyRetrieval=true& 설정 추가
-			String url ="jdbc:mysql://localhost:3306/mydb?allowPublicKeyRetrieval=true&characterEncoding=UTF-8&serverTimezone=UTC&useSSL=false";
+			String url ="jdbc:mysql://localhost:3306/mydb?characterEncoding=UTF-8&serverTimezone=UTC&useSSL=false";
 			System.out.println("** DB Connection 성공 **");
 			return DriverManager.getConnection(url,"root","ctho55");
 		} catch (Exception e) {

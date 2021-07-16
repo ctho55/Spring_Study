@@ -1,17 +1,13 @@
-package memberDI;
+package service;
 
 import java.util.List;
 
-//@Component("ss")
+import util.MemberDAO;
+import vo.MemberVO;
+
 public class MemberService {
-	//@Autowired
-	MemberDAO dao;
 	
-	// => xml, 생성자 주입
-	MemberService(MemberDAO dao) { 
-		this.dao=dao;
-		System.out.println("~~ DAO 생성자 주입 ~~");
-	}
+	MemberDAO dao = new MemberDAO();
 	
 	public List<MemberVO> selectList() {
 		return dao.selectList();

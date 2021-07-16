@@ -14,7 +14,23 @@
 
 	<!-- Handles HTTP GET requests for /resources/** by efficiently serving up static resources in the ${webappRoot}/resources directory -->
 	<resources mapping="/resources/**" location="/resources/" />
-
+	
+	<!-- ** spring DispatcherServlet Test 1단계 ** 
+      1. HandlerMapping 등록
+        1.1) HandlerMapping Bean 등록 
+   -->     
+   <beans:bean class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping" >
+      <beans:property name="mappings">
+         <beans:props>
+            <beans:prop key="/mlist">list</beans:prop>
+            <beans:prop key="/mdetail">detail</beans:prop>
+         </beans:props>
+      </beans:property>
+   </beans:bean>
+   <!-- 1.2) Controller 등록 -->
+   <beans:bean class="spDispatcher.C01_MList" id="list"/>
+   <beans:bean class="spDispatcher.C02_MDetail" id="detail"/> 
+	
 	<!-- Resolves views selected for rendering by @Controllers to .jsp resources in the /WEB-INF/views directory -->
 	<beans:bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<beans:property name="prefix" value="/WEB-INF/views/" />

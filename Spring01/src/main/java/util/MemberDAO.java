@@ -1,4 +1,4 @@
-package memberDI;
+package util;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -7,9 +7,10 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
+import vo.MemberVO;
+
 // ** DAO (Data Access Object)
 // => CRUD
-//@Component
 public class MemberDAO {
 	// ** 전역변수 정의
 	Connection cn = DBConnection.getConnection();

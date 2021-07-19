@@ -7,10 +7,18 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.springframework.context.annotation.Configuration;
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
+
 import vo.MemberVO;
 
 // ** DAO (Data Access Object)
 // => CRUD
+//@Configuration
+//@Component
+
+@Repository
 public class MemberDAO {
 	// ** 전역변수 정의
 	Connection cn = DBConnection.getConnection();

@@ -27,6 +27,6 @@
 </c:forEach>
 </table>
 <hr>
-<a href="/Web02/index.jsp">HOME</a>
+<a href="home">HOME</a>
 </body>
 </html>

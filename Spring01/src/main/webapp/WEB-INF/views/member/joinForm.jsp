@@ -5,11 +5,11 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>** Web MVC2 MemberJoin Form **</title>
+<title>** Web Spring MVC MemberJoin Form **</title>
 </head>
 <body>
-<h2>** Web MVC2 MemberJoin Form **</h2>
-<table><form action="/Web02/mjoin" method="get">
+<h2>** Web Spring MVC MemberJoin Form **</h2>
+<table><form action="mjoin" method="get">
 	<tr height="40"><td bgcolor="aqua">I  D</td>
 		<td><input type="text" name="id" size="20"></td>
 	</tr>
@@ -45,6 +45,6 @@
 	<br>${message}<br><br>	
 </c:if>
 <hr>
-<a href="/Web02/index.jsp">HOME</a>
+<a href="home">HOME</a>
 </body>
 </html>

@@ -4,10 +4,10 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>** Web Mvc2 MemberDetail **</title>
+<title>** Spring Mvc2 MemberDetail **</title>
 </head>
 <body>
-<h2>** Web Mvc2 MemberDetail **</h2>
+<h2>** Spring Mvc2 MemberDetail **</h2>
 <table>
 	<tr height="40">
 		<td bgcolor="Lavender">I  D</td><td>${Apple.id}</td>

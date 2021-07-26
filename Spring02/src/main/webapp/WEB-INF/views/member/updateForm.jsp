@@ -5,10 +5,10 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>** Web MVC2 MemberUpdate Form **</title>
+<title>** Spring MVC2 MemberUpdate Form **</title>
 </head>
 <body>
-<h2>** Web MVC2 MemberUpdate Form **</h2>
+<h2>** Spring MVC2 MemberUpdate Form **</h2>
 <table><form action="update" method="get">
 	<tr height="40"><td bgcolor="PaleGreen">I  D</td>
 		<td><input type="text" name="id" size="20" value="${Apple.id}" readonly></td>

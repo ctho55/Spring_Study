@@ -14,6 +14,7 @@
 => ${message}<br>
 </c:if>
 <hr>
+<img src="/green/resources/myimg/lighthouse.jpg" width="300" height="200">
 <table border="1" width=800>
 <tr height="30" bgcolor="pink">
 	<th>ID</th><th>Password</th><th>Name</th><th>Level</th>
@@ -27,6 +28,6 @@
 </c:forEach>
 </table>
 <hr>
-<a href="home">HOME</a>
+<a href="/green/home">HOME</a> <!-- member/list 사용시경로 -->
 </body>
 </html>

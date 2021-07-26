@@ -2,13 +2,13 @@
     pageEncoding="UTF-8" trimDirectiveWhitespaces="true"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>    
 <!DOCTYPE html>
-<html> 
+<html>
 <head>
 <meta charset="UTF-8">
-<title>** Web Spring MVC MemberJoin Form **</title>
+<title>** Spring MVC MemberJoin Form **</title>
 </head>
 <body>
-<h2>** Web Spring MVC MemberJoin Form **</h2>
+<h2>** Spring MVC MemberJoin Form **</h2>
 <table><form action="join" method="get">
 	<tr height="40"><td bgcolor="aqua">I  D</td>
 		<td><input type="text" name="id" size="20"></td>

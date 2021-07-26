@@ -34,6 +34,10 @@
 
 	<a href="mlist">MList</a>&nbsp;&nbsp;
 	<a href="blist">BList</a>&nbsp;&nbsp;
+	<a href="logj">Log4j</a>&nbsp;&nbsp;
+	<!-- class RequestMapping Test -->
+	<a href="member/list">Member2</a>&nbsp;&nbsp;
+	<a href="member/memberList3">view생략</a>&nbsp;&nbsp;
 
 
 </body>

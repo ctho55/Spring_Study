@@ -21,8 +21,14 @@
 		<beans:property name="suffix" value=".jsp" />
 	</beans:bean>
 	
-	<context:component-scan base-package="com.ncs.green, util, service " />
+	<!-- <beans:bean class="service.MemberService" id="servi" lazy-init="true">
+		<beans:constructor-arg name="dao" ref="DAO"/>
+	</beans:bean>
 	
-	
+	<beans:bean class="util.MemberDAO" id="DAO" lazy-init="true" />
+	 -->
+	<context:component-scan base-package="com.ncs.green,util,service " />
+	 
+	 
 	
 </beans:beans>

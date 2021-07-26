@@ -5,10 +5,10 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>*** Web_MVC2 LoginForm **</title>
+<title>** Spring_MVC2 LoginForm **</title>
 </head>
 <body>
-<h2>*** Web_MVC2 LoginForm_FrontController Test **</h2>
+<h2>*** Spring_MVC2_LoginForm Test **</h2>
 <br>
 <!-- <table><form action="/Web02/login" method="get"> -->
 <!-- ** FrontController Test   -->
